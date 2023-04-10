@@ -9,7 +9,7 @@ $result=$conn->query($sql);
 if($result->num_rows==0){
     echo "Utente non presente";
 }else{
-    $sql="SELECT id, nickname FROM users WHERE nickname='$nickname' AND password = SHA2(CONCAT(?, (SELECT salt FROM users WHERE nickname = ?)), 256);";
+    $sql="SELECT id, nickname FROM users WHERE nickname='$nickname' AND password = SHA2(CONCAT(password, (SELECT salt FROM users WHERE nickname='$nickname')), 256);";
     $result=$conn->query($sql);
     if($result->num_rows>0){
         session_start();
