@@ -10,6 +10,7 @@ body{
  }
 
  a{
+    width: 100%;
     text-align: center;
     color: #222;
  }
