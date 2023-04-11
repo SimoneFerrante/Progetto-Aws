@@ -9,7 +9,7 @@
     <body>
         <div class="container">
             <h1>Login Fallito</h1>
-                <button href="login.php">Ripetere il Login</button>
+                <button type="submit" href="login.php">Ripetere il Login</button>
         </div>
     </body>
 </html>
