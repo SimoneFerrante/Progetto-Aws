@@ -2,12 +2,12 @@
 require 'db_connection.php';
 session_start();
 
-$nickname = mysqli_real_escape_string($connection, $_POST["nickname"]);
-$password = mysqli_real_escape_string($connection, $_POST["password"]);
+$nickname = mysqli_real_escape_string($conn, $_POST["nickname"]);
+$password = mysqli_real_escape_string($conn, $_POST["password"]);
 
 $sql="SELECT id,nickname FROM users WHERE nickname=? AND password=SHA2(CONCAT(?, (SELECT salt FROM users WHERE nickname=?)), 256);";
 
-$statement = $connection->prepare($sql);
+$statement = $conn->prepare($sql);
 
 $statement->bind_param("sss", $nickname, $pass, $nickname);
 $query_response = [];
