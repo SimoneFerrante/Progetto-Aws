@@ -49,7 +49,17 @@ body
     animation: animate 6s linear infinite;
     animation-delay: -5s;
 }
-
+@keyframes animate
+{
+    0%
+    {
+transform: rotate(0deg);
+    }
+    100%
+    {
+transform: rotate(360deg);
+    }
+}
 .form
 {
     position: absolute;
@@ -124,7 +134,23 @@ body
 {
     height: 44px;
 }
-
+.links
+{
+    display: flex;
+    justify-content: space-between;
+}
+.links a
+{
+    margin: 11px 0;
+    font-size: 0.8em;
+    color: #ff8800;
+    text-decoration: none;
+}
+.links a:hover,
+.links a:nth-child(2)
+{
+    color: #ff8800;
+}
 input[type="submit"]
 {   
     position: absolute;
