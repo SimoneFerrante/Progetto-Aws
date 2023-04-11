@@ -5,6 +5,6 @@
         <title>Homepage</title>
     </head>
     <body>
-        <label>SUS PROVA USU</label>
+        <label>AWS</label>
     </body>
 </html>
