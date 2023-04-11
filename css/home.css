@@ -1,0 +1,16 @@
+
+body{
+    text-align: center;
+    background: #19559f;
+    font-family: sans-serif;
+ }
+
+ .container{
+    margin: auto;
+    width: 500px;
+    max-width: 90%;
+ }
+
+ .container form h1{
+    color: #222;
+ }
