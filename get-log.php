@@ -24,8 +24,7 @@ if ($statement->fetch()){
 }else{
   http_response_code(400);
   $response['message'] = 'Login Fallito';
-  sleep(3);
-  header('Location: login.php');
+  header('Location: failed-log.html');
 }
 $statement->close();
 
