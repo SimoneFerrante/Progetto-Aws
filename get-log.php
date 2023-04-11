@@ -19,10 +19,10 @@ $statement->execute();
 if ($statement->fetch()){
   $_SESSION['user_id']=$query_response['id'];
   $_SESSION['nickname']=$query_response['nickname'];
-  $response['message']='login successful';
+  $response['message']='Login Riuscito';
 }else{
   http_response_code(400);
-  $response['message']='login failed';
+  $response['message']='Login non Riuscito';
 }
 $statement->close();
 echo json_encode($response);

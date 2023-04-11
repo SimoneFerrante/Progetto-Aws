@@ -1,12 +1,15 @@
 <?php
 $hostname="localhost";
-$username="root";
+$db_name="progetto_aws";
 $password="";
-$database="progetto_aws";
-
-$connection=new mysqli($hostname,$username,$password,$database);
-
+$username="root";
+$connection = new mysqli($hostname, $username, $password, $db_name);
+$response=[];
 if ($connection->connect_error) {
-  die("Processo fallito: " . $connection->connect_error);
-} 
+  $response['message'] = 'Connessione Fallita';
+  http_response_code(400);
+  echo json_encode($response);
+  die;
+}
+return $connection;
 ?>
