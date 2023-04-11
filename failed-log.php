@@ -1,6 +1,9 @@
+<?php
+?>
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="/css/fail-log.css">
         <title>Failed Login</title>
     </head>
     <body>
