@@ -10,6 +10,7 @@
             <input type="text" name="nickname" placeholder="Nickname" required/><br>
             <input type="password" name="password" placeholder="Password" required/><br>
             <input type="submit"/><br>
+            
         </form>
     </body>
 </html>
