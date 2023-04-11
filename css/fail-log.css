@@ -1,5 +1,6 @@
 
 body{
+    text-align: center;
     background: #eee;
     font-family: sans-serif;
  }
@@ -10,7 +11,6 @@ body{
  }
 
  a{
-    width: 100%;
     text-align: center;
     color: #222;
  }
