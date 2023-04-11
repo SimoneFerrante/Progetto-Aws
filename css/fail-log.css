@@ -3,13 +3,13 @@ body{
     background: #eee;
     font-family: sans-serif;
  }
- 
- .container form h1{
+
+.container form h1{
     text-align: center;
     color: #222;
  }
 
- .button{
+ a{
     text-align: center;
     color: #222;
  }
