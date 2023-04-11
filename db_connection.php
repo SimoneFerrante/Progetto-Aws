@@ -4,9 +4,9 @@ $username="root";
 $password="";
 $database="progetto_aws";
 
-$conn=new mysqli($hostname,$username,$password,$database);
+$connection=new mysqli($hostname,$username,$password,$database);
 
-if ($conn->connect_error) {
-  die("Processo fallito: " . $conn->connect_error);
+if ($connection->connect_error) {
+  die("Processo fallito: " . $connection->connect_error);
 } 
 ?>
