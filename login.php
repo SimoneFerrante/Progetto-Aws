@@ -3,7 +3,6 @@
 <html>
     <head>
         <title>Login</title>
-        <link rel="stylesheet" href="/css/login.css">
     </head>
     <body>
         <form action="get-log.php" method="post">
